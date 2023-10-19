@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Onest&family=Young+Serif&display=swap');
+
+:root {
+    --cor-disponivel: #07f70798;
+    --cor-fundo : #212529;
+    --cor-div-img: #2E2E2E;
+    --roxo: #3c14ec96;
+    --roxo-escuro: #220d80;
+    --roxo-claro: #471dff;
+    --font1: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+header {
+    padding: 1em 1em 0.5em 1em;
+    background-image: linear-gradient(to bottom, var(--roxo), var(--cor-fundo));
+}
+
+header h1 {
+    font-family: var(--font1);
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-family: var(--font1);
+    letter-spacing: 0.2em;
+}
+
+#menu  {
+    text-align: right;
+    margin: -20px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#menu a:hover {
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 5px;
+}
+
+#section-principal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+section > p {
+    font-family: var(--font1);
+    padding: 25px 0px 10px 0px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+section div img {
+    margin: 10px 0px 15px 0px;
+    width: 290px;
+    height: 210px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+#status {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+
+section > div {
+    width: 310px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    background-color: var(--cor-div-img);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+section > div > span {
+    background-color: var(--cor-disponivel);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+#preco {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+
+section p strong {
+    color: var(--roxo);
+    text-decoration: underline;
+}
+
+#btn-buy {
+    transition: transform 1s;
+    font-weight: normal;
+    color: white;
+    display: block;
+    background-image: linear-gradient(to top, var(--roxo-escuro), var(--roxo-claro));
+    margin: 0 auto;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.39);
+}
+
+#btn-buy:hover, :focus {
+    background: var(--roxo-claro);
+    transform: translateY(15px) scale(1.2);
+    cursor: pointer;
+    color: white;
+}
